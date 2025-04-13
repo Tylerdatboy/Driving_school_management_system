@@ -1,0 +1,9 @@
+INSERT INTO drivingschool.jiaxiaobaoming (addtime,jiaxiaomingcheng,lianxifangshi,xuefei,fengmian,jiaxiaodizhi) VALUES
+	 ('2023-03-11 19:58:59','Name of driving school1','contact information1',1.0,'upload/jiaxiaobaoming_fengmian1.jpg,upload/jiaxiaobaoming_fengmian2.jpg,upload/jiaxiaobaoming_fengmian3.jpg','Driving school address1'),
+	 ('2023-03-11 19:58:59','Name of driving school2','contact information2',2.0,'upload/jiaxiaobaoming_fengmian2.jpg,upload/jiaxiaobaoming_fengmian3.jpg,upload/jiaxiaobaoming_fengmian4.jpg','Driving school address2'),
+	 ('2023-03-11 19:58:59','Name of driving school3','contact information3',3.0,'upload/jiaxiaobaoming_fengmian3.jpg,upload/jiaxiaobaoming_fengmian4.jpg,upload/jiaxiaobaoming_fengmian5.jpg','Driving school address3'),
+	 ('2023-03-11 19:58:59','Name of driving school4','contact information4',4.0,'upload/jiaxiaobaoming_fengmian4.jpg,upload/jiaxiaobaoming_fengmian5.jpg,upload/jiaxiaobaoming_fengmian6.jpg','Driving school address4'),
+	 ('2023-03-11 19:58:59','Name of driving school5','contact information5',5.0,'upload/jiaxiaobaoming_fengmian5.jpg,upload/jiaxiaobaoming_fengmian6.jpg,upload/jiaxiaobaoming_fengmian7.jpg','Driving school address5'),
+	 ('2023-03-11 19:58:59','Name of driving school6','contact information6',6.0,'upload/jiaxiaobaoming_fengmian6.jpg,upload/jiaxiaobaoming_fengmian7.jpg,upload/jiaxiaobaoming_fengmian8.jpg','Driving school address6'),
+	 ('2023-03-11 19:58:59','Name of driving school7','contact information7',7.0,'upload/jiaxiaobaoming_fengmian7.jpg,upload/jiaxiaobaoming_fengmian8.jpg,upload/jiaxiaobaoming_fengmian9.jpg','Driving school address7'),
+	 ('2023-03-11 19:58:59','Name of driving school8','contact information8',8.0,'upload/jiaxiaobaoming_fengmian8.jpg,upload/jiaxiaobaoming_fengmian9.jpg,upload/jiaxiaobaoming_fengmian10.jpg','Driving school address8');
