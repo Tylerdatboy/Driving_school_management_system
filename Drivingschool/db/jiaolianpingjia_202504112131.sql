@@ -1,0 +1,9 @@
+INSERT INTO drivingschool.jiaolianpingjia (addtime,jiaolianzhanghao,jiaolianxingming,lianxidianhua,xueyuanzhanghao,xueyuanxingming,xueyuanshouji,lianxikemu,pingjia) VALUES
+	 ('2023-03-11 19:58:59','Coach account1','Coach Name1','Contact Number1','Student account1','Student name1','Student mobile phone1','Practice subjects1',' evaluate1'),
+	 ('2023-03-11 19:58:59','Coach account2','Coach Name2','Contact Number2','Student account2','Student name2','Student mobile phone2','Practice subjects2',' evaluate2'),
+	 ('2023-03-11 19:58:59','Coach account3','Coach Name3','Contact Number3','Student account3','Student name3','Student mobile phone3','Practice subjects3',' evaluate3'),
+	 ('2023-03-11 19:58:59','Coach account4','Coach Name4','Contact Number4','Student account4','Student name4','Student mobile phone4','Practice subjects4',' evaluate4'),
+	 ('2023-03-11 19:58:59','Coach account5','Coach Name5','Contact Number5','Student account5','Student name5','Student mobile phone5','Practice subjects5',' evaluate5'),
+	 ('2023-03-11 19:58:59','Coach account6','Coach Name6','Contact Number6','Student account6','Student name6','Student mobile phone6','Practice subjects6',' evaluate6'),
+	 ('2023-03-11 19:58:59','Coach account7','Coach Name7','Contact Number7','Student account7','Student name7','Student mobile phone7','Practice subjects7',' evaluate7'),
+	 ('2023-03-11 19:58:59','Coach account8','Coach Name8','Contact Number8','Student account8','Student name8','Student mobile phone8','Practice subjects8',' evaluate8');
