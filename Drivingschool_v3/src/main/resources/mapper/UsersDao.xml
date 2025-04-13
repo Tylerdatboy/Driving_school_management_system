@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.UsersDao">
+    <select id="selectListView"
+            resultType="com.entity.UsersEntity">
+        SELECT u.* FROM users u
+        <where>
+            1=1 ${ew.sqlSegment}
+        </where>
+    </select>
+
+    <select id="selectLists" resultType="com.entity.UsersEntity">
+        select id, selectedCoach, studentName , scheduleDate, startTime , endTime
+        from coaching_schedule
+        where selectedCoach = #{selectedCoach}
+          and studentName = #{studentName}
+          and scheduleDate = #{date}
+    </select>
+
+    <insert id="inserts">
+        insert into coaching_schedule(selectedCoach, studentName , scheduleDate, startTime , endTime)value (
+            #{selectedCoach},#{studentName},#{date},#{startTime},#{endTime})
+    </insert>
+
+    <select id="select" resultType="com.entity.listDTO">
+        select id,jiaolianzhanghao as name  from jiaxiaojiaolian
+    </select>
+
+    <select id="selectListss" resultType="com.entity.UsersEntity">
+        select id, selectedCoach, studentName , scheduleDate, startTime , endTime
+        from coaching_schedule
+        where selectedCoach = #{selectedCoach}
+          and scheduleDate = #{date}
+    </select>
+
+    <select id="selectid" resultType="int">
+        select id as name  from jiaxiaojiaolian where jiaolianzhanghao = #{username}
+    </select>
+</mapper>
