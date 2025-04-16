@@ -1,0 +1,251 @@
+@startuml "Driving School Management System Database Design"
+
+' Using ER diagram style
+
+!define PRIMARY_KEY(x) <b><color:red>x</color></b>
+
+' Theme settings
+skinparam class {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor Black
+}
+
+ENTITY driving_school_communication {
+    PRIMARY_KEY(id) bigint
+    school_name varchar
+    email varchar
+    contact_phone varchar
+    address varchar
+    details longtext
+    thumbsupnum int
+    crazilynum int
+    clicktime datetime
+    clicknum int
+    price float
+    onelimittimes int
+    alllimittimes int
+    create_time timestamp
+}
+
+ENTITY appointment_practice {
+    PRIMARY_KEY(id) bigint
+    student_account varchar
+    student_name varchar
+    appointment_no varchar
+    course_name varchar
+    coach_name varchar
+    practice_time datetime
+    appointment_date date
+    remarks varchar
+    approval_status varchar
+    approval_feedback varchar
+    userid int
+    create_time timestamp
+}
+
+ENTITY exam_arrangement {
+    PRIMARY_KEY(id) bigint
+    student_account varchar
+    student_name varchar
+    exam_no varchar
+    exam_name varchar
+    exam_location varchar
+    exam_time datetime
+    exam_date date
+    approval_status varchar
+    approval_feedback varchar
+    userid int
+    create_time timestamp
+}
+
+ENTITY storeup {
+    PRIMARY_KEY(id) bigint
+    userid int
+    refid bigint
+    tablename varchar
+    name varchar
+    picture varchar
+    type varchar
+    inteltype varchar
+    remark varchar
+    create_time timestamp
+}
+
+ENTITY aboutus {
+    PRIMARY_KEY(id) bigint
+    title varchar
+    subtitle varchar
+    content longtext
+    picture varchar
+}
+
+ENTITY coach_assignment {
+    PRIMARY_KEY(id) bigint
+    student_account varchar
+    student_name varchar
+    coach_name varchar
+    coach_gender varchar
+    contact_phone varchar
+    school_name varchar
+    assignment_date date
+    remarks varchar
+    create_time timestamp
+}
+
+ENTITY payment_information {
+    PRIMARY_KEY(id) bigint
+    student_account varchar
+    student_name varchar
+    payment_name varchar
+    amount float
+    payment_type varchar
+    remarks varchar
+    payment_no varchar
+    payment_date date
+    ispay varchar
+    create_time timestamp
+}
+
+ENTITY student {
+    PRIMARY_KEY(id) bigint
+    student_account varchar
+    password varchar
+    student_name varchar
+    avatar varchar
+    gender varchar
+    age int
+    id_card_no varchar
+    mobile_phone varchar
+    remarks varchar
+    createtime timestamp
+}
+
+ENTITY coach_evaluation {
+    PRIMARY_KEY(id) bigint
+    student_account varchar
+    student_name varchar
+    coach_name varchar
+    rating int
+    evaluation_no varchar
+    evaluation varchar
+    evaluation_date date
+    approval_status varchar
+    approval_feedback varchar
+    userid int
+    create_time timestamp
+}
+
+ENTITY vehicle_maintenance {
+    PRIMARY_KEY(id) bigint
+    vehicle_no varchar
+    vehicle_name varchar
+    vehicle_brand varchar
+    vehicle_model varchar
+    coach_name varchar
+    maintenance_date date
+    maintenance_items longtext
+    maintenance_status varchar
+    remarks varchar
+    create_time timestamp
+}
+
+ENTITY systemintro {
+    PRIMARY_KEY(id) bigint
+    title varchar
+    subtitle varchar
+    content longtext
+    picture varchar
+}
+
+ENTITY study_plan {
+    PRIMARY_KEY(id) bigint
+    plan_no varchar
+    plan_name varchar
+    course_content longtext
+    plan_cycle varchar
+    student_account varchar
+    student_name varchar
+    coach_name varchar
+    start_date date
+    end_date date
+    create_time timestamp
+}
+
+ENTITY school_vehicle {
+    PRIMARY_KEY(id) bigint
+    vehicle_no varchar
+    vehicle_name varchar
+    vehicle_brand varchar
+    vehicle_model varchar
+    coach_name varchar
+    contact_phone varchar
+    image varchar
+    status varchar
+    remarks varchar
+    create_time timestamp
+}
+
+ENTITY config {
+    PRIMARY_KEY(id) bigint
+    name varchar
+    value varchar
+}
+
+ENTITY token {
+    PRIMARY_KEY(id) bigint
+    userid int
+    username varchar
+    tablename varchar
+    token varchar
+    expiratedtime timestamp
+    create_time timestamp
+}
+
+ENTITY school_enrollment {
+    PRIMARY_KEY(id) bigint
+    student_account varchar
+    student_name varchar
+    gender varchar
+    age int
+    contact_phone varchar
+    school_name varchar
+    school_type varchar
+    school_image varchar
+    appointment_time datetime
+    remarks varchar
+    approval_status varchar
+    approval_feedback varchar
+    userid int
+    create_time timestamp
+}
+
+ENTITY coaching_schedule {
+    PRIMARY_KEY(id) bigint
+    coach_name varchar
+    date date
+    time varchar
+    location varchar
+    status varchar
+    create_time timestamp
+}
+
+ENTITY users {
+    PRIMARY_KEY(id) bigint
+    username varchar
+    password varchar
+    role varchar
+    create_time timestamp
+}
+
+ENTITY news {
+    PRIMARY_KEY(id) bigint
+    title varchar
+    introduction varchar
+    picture varchar
+    content longtext
+    create_time timestamp
+}
+
+
+@enduml
